@@ -13,12 +13,10 @@ int main() {
 
     int k = 0;
 
-    // Traverse from second to second-last element
     for (int i = 1; i < n - 1; i++) {
-        // Check for pattern 1 0 1
         if (a[i - 1] == 1 && a[i] == 0 && a[i + 1] == 1) {
-            k++;               // we perform one operation
-            a[i + 1] = 0;      // turn off the right light
+            k++;              
+            a[i + 1] = 0;      
         }
     }
 
